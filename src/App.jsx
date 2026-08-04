@@ -1,37 +1,25 @@
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Aboutme from './pages/Aboutme';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 function App() {
   return (
-    <div>
-      <header>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<Aboutme />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+      </Routes>
 
-      </header>
-      <body>
-        <p>
-          Welcome to my portfolio! Feel free to travel around the site to learn more about me.
-           If you don't know where to start, let me help you out:
-        </p>
-        <p>
-          You can &nbsp;
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          view my projects here,
-          </a>
-          &nbsp; or you can also &nbsp;
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          learn more about my skills and interests here.
-          </a>
-        </p>
-      </body>
+      <Footer />
     </div>
   );
 }
