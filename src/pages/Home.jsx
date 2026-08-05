@@ -12,7 +12,7 @@ function Home() {
 
         <p className="mt-4 text-stone-500 text-lg leading-relaxed">
           Welcome to my portfolio! Feel free to travel around the site to learn
-          more about me. If you don't know where to start, start by selecting the About me tab at the top right. &#9786;
+          more about me. If you don't know where to start, you can select the About me tab at the top right. &#9786;
         </p>
 
         {/* socials icons + email */}
@@ -24,13 +24,13 @@ function Home() {
 
         {/* internal links */}
         <p className="mt-8 text-stone-500">
-          You can{" "}
+          You can view my projects{" "}
           <Link to="/projects" className="text-stone-700 font-semibold underline hover:text-stone-500">
-            view my projects here
+            here
           </Link>
-          , or you can also{" "}
+          , or you can also learn more about my skills and interests{" "}
           <Link to="/skills" className="text-stone-700 font-semibold underline hover:text-stone-500">
-            learn more about my skills and interests here
+            here
           </Link>.
         </p>
 

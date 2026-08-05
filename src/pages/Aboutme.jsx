@@ -8,7 +8,7 @@ function Aboutme() {
         {/* image */}
         <div className="w-full md:w-2/5 flex-shrink-0">
           <img
-            src="/images/your-photo.jpg"
+            src="images/me.jpg"
             alt="Portrait"
             className="w-full h-auto rounded-2xl object-cover shadow-md"
           />
@@ -21,7 +21,7 @@ function Aboutme() {
           </h1>
 
           <p className="text-stone-500 text-lg leading-relaxed mb-4">
-            Hi!! I'm a fourth-year software engineering student at Concordia University, just about to start working on my Capstone project, an end-of-degree engineering project.
+            Hi!! I'm Adriana, a fourth-year software engineering student at Concordia University, just about to start working on my Capstone project, an end-of-degree engineering project.
              I'm someone who enjoys learning new tools, in both coding and arts!
           </p>
 

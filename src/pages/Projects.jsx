@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 //projects list
-//{ type: "video", src: "/images/projects/videoformat.mp4" },
+//{ type: "video", src: `${process.env.PUBLIC_URL}/images/projects/videoformat.mp4` },
 const projects = [
   {
     id: 1,
     title: "Where2Go Campus Navigation Mobile App",
-    description: "Led a group of 11 through a Mini-Capstone project following SCRUM methodology to build a mobile campus navigation app. The app helps users navigate both Concordia campuses using the Google Maps API to provide directions to buildings, classrooms, and points-of-interest.",
+    description: "Mobile campus navigation app for Concordia University, incorporating the Google Maps API to provide directions to buildings, classrooms, and points of interest across both campuses. Served as the team lead for an 11-member team, applying the SCRUM methodology to coordinate development.",
     category: "software",
     images: [
-    "/images/projects/where2go.1.png",
-    "/images/projects/where2go.2.png",
-    "/images/projects/where2go.3.png",
-    "/images/projects/where2go.4.png",
-    "/images/projects/where2go.5.png",
-    "/images/projects/where2go.6.png",
+    `${process.env.PUBLIC_URL}/images/projects/where2go.1.png`,
+    `${process.env.PUBLIC_URL}/images/projects/where2go.2.png`,
+    `${process.env.PUBLIC_URL}/images/projects/where2go.3.png`,
+    `${process.env.PUBLIC_URL}/images/projects/where2go.4.png`,
+    `${process.env.PUBLIC_URL}/images/projects/where2go.5.png`,
+    `${process.env.PUBLIC_URL}/images/projects/where2go.6.png`,
     ],
-    tags: ["Javascript", "ReactNative", "ExpoGo", "SCRUM", "CodeCov", "SonarQube", "Maestro", "Jest", "SCRUM", "Leadership"],
+    tags: ["Javascript", "ReactNative", "ExpoGo", "Maestro", "Jest", "CodeCov", "SonarQube", "SCRUM", "Team Lead"],
     link: "https://github.com/SOEN390-Winter2026/Where2Go-Project",
   },
   {
@@ -26,12 +26,12 @@ const projects = [
     description: "Built with a team of 5 for the User Interface Design course, this mobile plant care app pulls plant information from the Perenual API and lets users track watering schedules through a customizable calendar feature tailored to each registered plant.",
     category: "software",
     images: [
-    "/images/projects/happylilacs.0.png",
-    "/images/projects/happylilacs.1.png",
-    "/images/projects/happylilacs.2.png",
-    "/images/projects/happylilacs.3.png",
-    "/images/projects/happylilacs.4.png",
-    "/images/projects/happylilacs.5.png",
+    `${process.env.PUBLIC_URL}/images/projects/happylilacs.0.png`,
+    `${process.env.PUBLIC_URL}/images/projects/happylilacs.1.png`,
+    `${process.env.PUBLIC_URL}/images/projects/happylilacs.2.png`,
+    `${process.env.PUBLIC_URL}/images/projects/happylilacs.3.png`,
+    `${process.env.PUBLIC_URL}/images/projects/happylilacs.4.png`,
+    `${process.env.PUBLIC_URL}/images/projects/happylilacs.5.png`,
     ],
     tags: ["Typescript", "ReactNative", "ExpoGo", "Supabase (PostgreSQL)"],
     link: "https://github.com/Adriana643/HappyLilacs",
@@ -39,24 +39,24 @@ const projects = [
   {
     id: 3,
     title: "EcoPath - Bike Management System",
-    description: "Team project developed with 5 collaborators. EcoPath is a bike-sharing web application allowing users to locate, reserve, and manage bike rentals through an intuitive platform while.",
+    description: "Team project developed with 5 collaborators. EcoPath is a bike-sharing web application allowing users to locate, reserve, and manage bike rentals through an intuitive platform while operators can manage bike availability.",
     category: "software",
     images: [
-    "/images/projects/ecopath.1.png",
-    "/images/projects/ecopath.2.png",
-    "/images/projects/ecopath.3.png",
-    "/images/projects/ecopath.4.png",
+    `${process.env.PUBLIC_URL}/images/projects/ecopath.1.png`,
+    `${process.env.PUBLIC_URL}/images/projects/ecopath.2.png`,
+    `${process.env.PUBLIC_URL}/images/projects/ecopath.3.png`,
+    `${process.env.PUBLIC_URL}/images/projects/ecopath.4.png`,
     ],
-    tags: ["Java", "HTML", "CSS", "Springboot", "H2 Db", "SCRUM"],
+    tags: ["Java", "HTML", "CSS", "Springboot", "H2 DB", "SCRUM"],
   },
   {
     id: 4,
-    title: "Events Handler Mobile Application",
+    title: "Events Handler Mobile App",
     description: "Built for the Software Testing course, this mobile app lets managers create and edit events while users browse and register for them. The project emphasized test coverage, incorporating unit tests, performance tests, end-to-end tests, and integration testing throughout development.",
     category: "software",
     images: [
-    "/images/projects/events.2.png",
-    {type:"video", src: "/images/projects/events.1.mp4"}
+    `${process.env.PUBLIC_URL}/images/projects/events.2.png`,
+    {type:"video", src: `${process.env.PUBLIC_URL}/images/projects/events.1.mp4`}
     ],
     tags: ["Java", "Springboot", "ReactNative", "Maestro", "JUnit", "Jest", "Flashlight"],
     link: "https://github.com/Adriana643/SOEN345-Project",
@@ -74,24 +74,24 @@ const games = [
 
   {
       id: 101,
-      title: "After Midneight",
-      description: "A short game developed during McGameJam 2026 in a team of 6. This ambiance horror was developed using Unity's version control, where players interacting with the right items will discover the dark story of our protagonist. The theme of the event was: Hunt.",
+      title: "After Midnight",
+      description: "An ambiance horror game developed during McGameJam 2026 in a team of 6. It was developed using Unity's version control, where players interacting with the right items will be able to move through the dark story of our protagonist. The theme of the event was: Hunt.",
       category: "game",
       images: [
-        "/images/projects/midneight.1.png",
-        "/images/projects/midneight.2.png",
-        "/images/projects/midneight.3.png",
-        "/images/projects/midneight.4.png",
+        `${process.env.PUBLIC_URL}/images/projects/midneight.1.png`,
+        `${process.env.PUBLIC_URL}/images/projects/midneight.2.png`,
+        `${process.env.PUBLIC_URL}/images/projects/midneight.3.png`,
+        `${process.env.PUBLIC_URL}/images/projects/midneight.4.png`,
       ],
-      tags: ["Unity", "C#", "Teamwork"],
+      tags: ["Unity", "C#", "Unity Version Control"],
       link: "https://kanpekiwi.itch.io/after-midneight",
   },
   {
       id: 102,
       title: "Lost in Carnival",
-      description: "A Point and Click Game which includes a cohesive storyline, minigames and different endings. The game was our entry for McGameJam 2025 where we used Unity version control to develop a game within the theme: Lost and Found",
+      description: "A Point and Click Game which includes a cohesive storyline of a lost little boy in a circus, minigames and different endings. The game was our entry for McGameJam 2025 where we used Unity version control to develop a game within the theme: Lost and Found",
       category: "game",
-      tags: ["Unity", "C#", "Teamwork"],
+      tags: ["Unity", "C#", "Unity Version Control"],
   },
 
 ];
@@ -148,7 +148,8 @@ function ImageCarousel({ images, title }) {
 
       {hasMultiple && (
         <>
-          <button
+          <button 
+            type="button"
             onClick={goPrev}
             aria-label="Previous image"
             className="absolute left-2 top-1/2 -translate-y-1/2 bg-stone-700/60 text-white rounded-full p-2 hover:bg-stone-700/80 transition"
@@ -157,6 +158,7 @@ function ImageCarousel({ images, title }) {
           </button>
 
           <button
+            type="button"
             onClick={goNext}
             aria-label="Next image"
             className="absolute right-2 top-1/2 -translate-y-1/2 bg-stone-700/60 text-white rounded-full p-2 hover:bg-stone-700/80 transition"
@@ -239,8 +241,9 @@ function Projects() {
       {/* tab toggle */}
       <div className="flex justify-center gap-3 mb-10">
         <button
+          type="button"
           onClick={() => setActiveTab("software")}
-          className={`px-5 py-2 rounded-full font-semibold text-sm transition ${
+          className={`px-10 py-3 rounded-full font-semibold text-sm transition ${
             activeTab === "software"
               ? "bg-stone-500 text-white"
               : "bg-stone-200 text-stone-700 hover:bg-stone-300"
@@ -249,8 +252,9 @@ function Projects() {
           Software
         </button>
         <button
+          type="button"
           onClick={() => setActiveTab("game")}
-          className={`px-5 py-2 rounded-full font-semibold text-sm transition ${
+          className={`px-10 py-3 rounded-full font-semibold text-sm transition ${
             activeTab === "game"
               ? "bg-stone-500 text-white"
               : "bg-stone-200 text-stone-700 hover:bg-stone-300"

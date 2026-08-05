@@ -6,13 +6,13 @@ export default function Header(){
 
     return(
         <header className="sticky top-0 z-50">
-            <nav className="relative bg-stone-500 text-white px-8 py-5">
+            <nav className="relative bg-stone-500 text-white px-8 py-4">
                 <div className="flex items-center justify-between">
                     {/* name, github, linkedin icons */}
                     <div>
-                    <h1 className="font-semibold text-lg">Adriana Ruscitti-Titto</h1>
+                    <h1 className="font-semibold text-base">Adriana Ruscitti-Titto</h1>
 
-                    <div className="flex gap-3 mt-1 text-xlg">
+                    <div className="flex gap-3 mt-1 text-base">
                         <a
                           href="https://github.com/Adriana643"
                           target="_blank"
@@ -31,7 +31,7 @@ export default function Header(){
                     </div>
 
                     {/* navbar sections */}
-                    <ul className="flex items-center gap-8 font-semibold text-xl">
+                    <ul className="flex items-center gap-6 font-semibold text-base">
                     <li>
                         <NavLink
                           to="/"
