@@ -1,34 +1,30 @@
 import React from 'react';
 
 const languages = [
-    { name: "Java", top: true },
-    { name: "JavaScript", top: true },
-    { name: "TypeScript" },
+    { name: "Java" },
+    { name: "JavaScript"},
     { name: "Python" },
     { name: "HTML" },
     { name: "CSS" },
     { name: "C++" },
-    { name: "C"},
     { name: "C# (Unity)" },
     { name: "SQL"},
 ];
 
 const frameworks = [
-    { name: "React Native", top: true },
+    { name: "React Native"},
     { name: "React" },
     { name: "Spring Boot" },
     { name: "Node.js" },
-    { name: "Tailwind CSS" },
 ];
 
 const tools = [
-    { name: "Git / GitHub", top: true },
-    { name: "VS Code", top: true },
+    { name: "Git / GitHub" },
+    { name: "VS Code" },
     { name: "Jest" },
     { name: "JUnit" },
     { name: "Maestro" },
     { name: "Figma" },
-    { name: "BitBucket" },
     { name: "Jira" },
     { name: "Confluence" },
     { name: "IntelliJ" },
@@ -36,7 +32,7 @@ const tools = [
 ];
 
 const databasesCloud = [
-    { name: "Supabase", top: true },
+    { name: "Supabase" },
     { name: "PostgreSQL" },
     { name: "MongoDB" },
     { name: "Microsoft Azure" },
@@ -44,10 +40,9 @@ const databasesCloud = [
 ];
 
 const other = [
-    { name: "Clip Studio Paint", top: true },
-    { name: "Excel VBA", top: true },
+    { name: "Clip Studio Paint" },
+    { name: "Excel VBA" },
     { name: "Unity" },
-    { name: "Sharepoint" },
     { name: "Power Automate" },
     { name: "Shopify" },
     { name: "Audacity" },

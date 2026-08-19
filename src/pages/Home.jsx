@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Home() {
+  
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-[70vh] flex items-center justify-center px-6 py-16">
       <div className="max-w-xl text-center">
@@ -9,6 +13,10 @@ function Home() {
         <h1 className="font-semibold text-4xl text-stone-700">
           Hello, I'm Adriana Ruscitti-Titto
         </h1>
+
+        <h3 className="font-semibold text-stone-500">
+          Software Engineering | web dev &bull; game dev &bull; mobile dev | java &bull; c++ 
+        </h3>
 
         <p className="mt-4 text-stone-500 text-lg leading-relaxed">
           Welcome to my portfolio! Feel free to travel around the site to learn
@@ -23,17 +31,38 @@ function Home() {
         </div>
 
         {/* internal links */}
-        <p className="mt-8 text-stone-500">
-          You can view my projects{" "}
-          <Link to="/projects" className="text-stone-700 font-semibold underline hover:text-stone-500">
-            here
-          </Link>
-          , or you can also learn more about my skills and interests{" "}
-          <Link to="/skills" className="text-stone-700 font-semibold underline hover:text-stone-500">
-            here
-          </Link>.
-        </p>
+        <div className="flex items-center justify-center gap-4 mt-8">
 
+          <button
+            type="button"
+            onClick={() => navigate('/aboutme')}
+            className="bg-stone-500 text-white rounded-full px-6 py-2 hover:bg-stone-900/80 transition"
+          >
+            About me
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate('/projects')}
+            className="bg-stone-500 text-white rounded-full px-6 py-2 hover:bg-stone-900/80 transition"
+          >
+            View projects
+          </button>
+          <a
+            href="https://github.com/Adriana643"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-2xl text-stone-700 cursor-pointer hover:opacity-80" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adriana-ruscitti-titto-61349b296/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-2xl text-stone-700 cursor-pointer hover:opacity-80" />
+          </a>
+
+        </div>
       </div>
     </div>
   );

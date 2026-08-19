@@ -72,7 +72,7 @@ export default function Header(){
                         </NavLink>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <NavLink
                           to="/skills"
                           className={({ isActive }) =>
@@ -83,7 +83,7 @@ export default function Header(){
                         >
                         Skills
                         </NavLink>
-                    </li>
+                    </li> */}
 
                     </ul>
                 </div>

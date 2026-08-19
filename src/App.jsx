@@ -1,13 +1,20 @@
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Home from './pages/Home';
 import Aboutme from './pages/Aboutme';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
