@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
 import { NavLink } from 'react-router-dom'; 
 
 export default function Header(){
@@ -27,6 +27,15 @@ export default function Header(){
                         >
                           <FaLinkedin className="cursor-pointer hover:opacity-80" />
                         </a>
+
+                        <a
+                          href="https://adriana643.itch.io/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaItchIo className="cursor-pointer hover:opacity-80" />
+                        </a>
+
                     </div>
                     </div>
 

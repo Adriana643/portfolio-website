@@ -84,16 +84,28 @@ const games = [
         `${process.env.PUBLIC_URL}/images/projects/midneight.4.png`,
       ],
       tags: ["Unity", "C#", "Unity Version Control"],
-      link: "https://kanpekiwi.itch.io/after-midneight",
+      link: "https://adriana643.itch.io/after-midneight",
   },
   {
       id: 102,
+      title: "Starry Delivery",
+      description: "Play as a little delivery space ship whose goal is to color the galaxy! It was developed for Cosmic Jam 2026 in a team of 3, where the player has to fly through space using their mouse. The theme of the event was: Orbit.",
+      category: "game",
+      images: [
+        `${process.env.PUBLIC_URL}/images/projects/starry.1.png`,
+        `${process.env.PUBLIC_URL}/images/projects/starry.2.png`,
+        `${process.env.PUBLIC_URL}/images/projects/starry.3.png`,
+      ],
+      tags: ["Unity", "C#", "Github", "CSP"],
+      link: "https://adriana643.itch.io/starry-delivery"
+  },
+  {
+      id: 103,
       title: "Lost in Carnival",
       description: "A Point and Click Game which includes a cohesive storyline of a lost little boy in a circus, minigames and different endings. The game was our entry for McGameJam 2025 where we used Unity version control to develop a game within the theme: Lost and Found",
       category: "game",
       tags: ["Unity", "C#", "Unity Version Control"],
   },
-
 ];
 
 // normalizing different medias (image & vid)

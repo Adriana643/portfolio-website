@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaItchIo } from "react-icons/fa";
 
 function Home() {
   
@@ -15,7 +15,7 @@ function Home() {
         </h1>
 
         <h3 className="font-semibold text-stone-500">
-          Software Engineering | web dev &bull; game dev &bull; mobile dev | java &bull; c++ 
+          Software Engineering | coding enthusiast | java &bull; c++ 
         </h3>
 
         <p className="mt-4 text-stone-500 text-lg leading-relaxed">
@@ -26,7 +26,7 @@ function Home() {
         {/* socials icons + email */}
         <div className="flex items-center justify-center gap-3 mt-8">
           <p className="text-stone-500 text-lg">
-            For any inquiries, you can email me at <a className="underline hover:text-stone-500" href="mailto:adrianart2002@yahoo.ca">adrianart2002@yahoo.ca</a>.
+            For any inquiries, you can email me at <a className="underline hover:text-stone-500" href="mailto:adriana.14rt@gmail.com">adriana.14rt@gmail.com</a>.
           </p>
         </div>
 
@@ -60,6 +60,14 @@ function Home() {
             rel="noopener noreferrer"
           >
             <FaLinkedin className="text-2xl text-stone-700 cursor-pointer hover:opacity-80" />
+          </a>
+
+          <a
+            href="https://adriana643.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaItchIo className="text-2xl text-stone-700 cursor-pointer hover:opacity-80" />
           </a>
 
         </div>
