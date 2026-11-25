@@ -71,9 +71,37 @@ const projects = [
 ];
 
 const games = [
-
-  {
+    {
       id: 101,
+      title: "Starry Delivery",
+      description: "Play as a little delivery space ship whose goal is to color the galaxy! It was developed for Cosmic Jam 2026 in a team of 3, where the player has to fly through space using their mouse. The theme of the event was: Orbit.",
+      category: "game",
+      images: [
+        `${process.env.PUBLIC_URL}/images/projects/starry.1.png`,
+        `${process.env.PUBLIC_URL}/images/projects/starry.2.png`,
+        `${process.env.PUBLIC_URL}/images/projects/starry.3.png`,
+        `${process.env.PUBLIC_URL}/images/projects/starry.4.png`,
+      ],
+      tags: ["Unity", "C#", "Github", "Clip Studio Paint"],
+      link: "https://adriana643.itch.io/starry-delivery"
+  },
+  {
+      id: 102,
+      title: "Divine Intervention",
+      description: "A game developed for Gamerella 2026 where you run a divination booth and help customers follow their true paths. You have three customers, each accompanied with a mini-game where your performance will provide the answer you will give to each client. The theme of the event was: What's next?",
+      category: "game",
+      images: [
+        `${process.env.PUBLIC_URL}/images/projects/divine.1.png`,
+        `${process.env.PUBLIC_URL}/images/projects/divine.2.png`,
+        `${process.env.PUBLIC_URL}/images/projects/divine.3.png`,
+        `${process.env.PUBLIC_URL}/images/projects/divine.4.png`,
+        `${process.env.PUBLIC_URL}/images/projects/divine.5.png`,
+      ],
+      tags: ["Unity", "C#", "Github", "Clip Studio Paint"],
+      link: "https://adriana643.itch.io/divine-intervention",
+  },
+  {
+      id: 103,
       title: "After Midnight",
       description: "An ambiance horror game developed during McGameJam 2026 in a team of 6. It was developed using Unity's version control, where players interacting with the right items will be able to move through the dark story of our protagonist. The theme of the event was: Hunt.",
       category: "game",
@@ -87,20 +115,17 @@ const games = [
       link: "https://adriana643.itch.io/after-midneight",
   },
   {
-      id: 102,
-      title: "Starry Delivery",
-      description: "Play as a little delivery space ship whose goal is to color the galaxy! It was developed for Cosmic Jam 2026 in a team of 3, where the player has to fly through space using their mouse. The theme of the event was: Orbit.",
+      id: 104,
+      title: "Paint Maniac",
+      description: "A game made for the Introduction to Video Game Development course. More information to be added soon!",
       category: "game",
       images: [
-        `${process.env.PUBLIC_URL}/images/projects/starry.1.png`,
-        `${process.env.PUBLIC_URL}/images/projects/starry.2.png`,
-        `${process.env.PUBLIC_URL}/images/projects/starry.3.png`,
+        `${process.env.PUBLIC_URL}/images/projects/paint.1.png`,
       ],
-      tags: ["Unity", "C#", "Github", "CSP"],
-      link: "https://adriana643.itch.io/starry-delivery"
+      tags: ["Unity", "C#", "Github"],
   },
   {
-      id: 103,
+      id: 105,
       title: "Lost in Carnival",
       description: "A Point and Click Game which includes a cohesive storyline of a lost little boy in a circus, minigames and different endings. The game was our entry for McGameJam 2025 where we used Unity version control to develop a game within the theme: Lost and Found",
       category: "game",
